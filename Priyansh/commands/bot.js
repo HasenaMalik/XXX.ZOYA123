@@ -162,7 +162,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
       ${rand}
       
       
-      🌸===『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍 𝐁𝐑𝐎𝐊𝐄𝐍 𝐀𝐀𝐃𝐈`
+      🌸===『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍𝐙𝐎𝐘𝐀`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
