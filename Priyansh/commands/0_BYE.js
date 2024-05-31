@@ -20,7 +20,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("bye") ||
 react.includes("BYE")) {
 		var msg = {
-				body: `𝐁𝐘𝐄 𝐁𝐘𝐄 🙋‍♂️ 𝐓𝐀𝐊𝐄 𝐂𝐀𝐑𝐄 𝐁𝐀𝐁𝐔 😇`,attachment: fs.createReadStream(__dirname + `/AADI/Bye.gif`)
+				body: `𝐁𝐘𝐄 𝐁𝐘𝐄 🙋‍♂️ 𝐓𝐀𝐊𝐄 𝐂𝐀𝐑𝐄 𝐁𝐀𝐁𝐔 😇`,attachment: fs.createReadStream(__dirname + `/ZOYA/Bye.gif`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💖", event.messageID, (err) => {}, true)
