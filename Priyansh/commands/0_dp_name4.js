@@ -1,83 +1,128 @@
-module.exports.config = {
-  name: "dpname4",
-  version: "1.0.0",
-  hasPermssion: 0,
-  credits: "PREM BABU",
-  description: "dpname maker",
-  commandCategory: "dpname",
-  usages: "text 1 + text 2",
-  cooldowns: 1
-};
-module.exports.wrapText = (ctx, text, maxWidth) => {
-  return new Promise((resolve) => {
-    if (ctx.measureText(text).width < maxWidth) return resolve([text]);
-    if (ctx.measureText("W").width > maxWidth) return resolve(null);
-    const words = text.split(" ");
-    const lines = [];
-    let line = "";
-    while (words.length > 0) {
-      let split = false;
-      while (ctx.measureText(words[0]).width >= maxWidth) {
-        const temp = words[0];
-        words[0] = temp.slice(0, -1);
-        if (split) words[1] = `${temp.slice(-1)}${words[1]}`;
-        else {
-          split = true;
-          words.splice(1, 0, temp.slice(-1));
-        }
-      }
-      if (ctx.measureText(`${line}${words[0]}`).width < maxWidth)
-        line += `${words.shift()} `;
-      else {
-        lines.push(line.trim());
-        line = "";
-      }
-      if (words.length === 0) lines.push(line.trim());
+[
+    {
+        "key": "dbln",
+        "value": "%7B%2261559241000366%22%3A%22onzZTXvN%22%2C%2261559276925268%22%3A%22jbkg0DIt%22%2C%2261559158361345%22%3A%220NaCLKuQ%22%2C%2261559195798153%22%3A%22i6wMZeFA%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "datr",
+        "value": "o9RFZmcWJHglsTRqIyPwN00U",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "sb",
+        "value": "o9RFZgL_hhlDf3Wz6-A5VFBt",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "ps_n",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "ps_l",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "locale",
+        "value": "en_US",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "vpd",
+        "value": "v1%3B1101x582x1.2372801303863525",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A2510%3Btimestamp%3A1716916612",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "dpr",
+        "value": "1.3603237867355347",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "wd",
+        "value": "1350x2554",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "c_user",
+        "value": "61559376917911",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "xs",
+        "value": "50%3ADVngGGtQlDXXbQ%3A2%3A1717127842%3A-1%3A7331",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "fr",
+        "value": "0JNagBFKU5o4Vo4J5.AWWXQ1zBJbBr_zRixoLrmTmzOBg.BmRdSj..AAA.0.0.BmWUr1.AWU83ZpB1ds",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
+    },
+    {
+        "key": "presence",
+        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1717127935221%2C%22v%22%3A1%7D",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-05-31T03:59:02.686Z",
+        "lastAccessed": "2024-05-31T03:59:02.686Z"
     }
-    return resolve(lines);
-  });
-};
-
-module.exports.run = async function ({ api, event, args, Users }) {
-  let { senderID, threadID, messageID } = event;
-  const { loadImage, createCanvas } = require("canvas");
-  const Canvas = global.nodemodule["canvas"];
-  const request = require('request');
-  const fs = global.nodemodule["fs-extra"];
-  const axios = global.nodemodule["axios"];
-  let pathImg = __dirname + `/cache/drake.png`;
-  const text = args.join(" ").trim().replace(/\s+/g, " ").replace(/(\s+\=)/g, "+").replace(/\|\s+/g, "+").split("+");
-  let getImage = (
-    await axios.get(encodeURI(`https://i.imgur.com/nJPIeQS.jpg`), {
-      responseType: "arraybuffer",
-    })
-  ).data;
-  fs.writeFileSync(pathImg, Buffer.from(getImage, "utf-8"));
-if(!fs.existsSync(__dirname+'/cache/SVN-Arial 2.ttf')) { 
-      let getfont = (await axios.get(`https://drive.google.com/u/0/uc?id=11YxymRp0y3Jle5cFBmLzwU89XNqHIZux&export=download`, { responseType: "arraybuffer" })).data;
-       fs.writeFileSync(__dirname+"/cache/SVN-Arial 2.ttf", Buffer.from(getfont, "utf-8"));
-    };
-  let baseImage = await loadImage(pathImg);
-  let canvas = createCanvas(baseImage.width, baseImage.height);
-  let ctx = canvas.getContext("2d");
-  ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
-  Canvas.registerFont(__dirname+`/cache/SVN-Arial 2.ttf`, {
-        family: "SVN-Arial 2"
-    });
-  ctx.font = "30px SVN-Arial 2";
-  ctx.fillStyle = "#000000";
-  ctx.textAlign = "center";
-  const line = await this.wrapText(ctx, text[0], 400);
-  const lines = await this.wrapText(ctx, text[1], 464);
-  ctx.fillText(line.join("\n"), 360, 67)
-  ctx.fillText(lines.join("\n"), 360, 197)
-  ctx.beginPath();
-  const imageBuffer = canvas.toBuffer();
-  fs.writeFileSync(pathImg, imageBuffer);
-  return api.sendMessage(
-    { attachment: fs.createReadStream(pathImg) },
-    threadID,
-    () => fs.unlinkSync(pathImg),
-    messageID
-  );
-};
+]
