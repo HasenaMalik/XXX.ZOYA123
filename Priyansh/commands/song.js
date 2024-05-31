@@ -49,8 +49,8 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
 		body: `┏━━━━━┓\n
-     आदि-बाबू                    ✧═══•❁𝗦𝗢𝗡𝗚❁•═══✧\n
-┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁AADI-BABU❁•═══✧`,
+     ज़ोया-बाबू                    ✧═══•❁𝗦𝗢𝗡𝗚❁•═══✧\n
+┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁ZOYA-BABU❁•═══✧`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
             
@@ -80,7 +80,7 @@ module.exports.run = async function ({ api, event, args }) {
             if (fs.statSync(path).size > 26214400) return api.sendMessage('Unable to send files because the capacity is greater than 25MB .', event.threadID, () => fs.unlinkSync(path), event.messageID);
             return api.sendMessage({ 
                 body: `┏━━━━━┓\n
-     आदि-बाबू                    ✧═══•❁𝗦𝗢𝗡𝗚❁•═══✧\n
+     ज़ोया-बाबू                    ✧═══•❁𝗦𝗢𝗡𝗚❁•═══✧\n
 ┗━━━━━┛\n\n🎵 Title 𒁍  ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍   ${this.convertHMS(data.dur)}\n👀 Views: ${data.viewCount}\n👍 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁AADI-BABU❁•═══✧`,
                 attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
             event.messageID)
@@ -100,7 +100,7 @@ module.exports.run = async function ({ api, event, args }) {
               msg += (`${num} - ${value.title} (${value.length.simpleText})\n\n`);
             }
             var body = `┏━━━━━┓\n
-     आदि-बाबू                    ✧═══•❁𝗦𝗢𝗡𝗚❁•═══✧\n
+     ज़ोया-बाबू                    ✧═══•❁𝗦𝗢𝗡𝗚❁•═══✧\n
 ┗━━━━━┛\n\nMujhe Ye ${link.length} Song Youtube Se Mile Hai 🙂👈\n◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆\n\n${msg}◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆━◆\nIss Mei Se Koi Bhi Ek Gana Select Kr lo 🤐👈`
             return api.sendMessage({
               body: body
