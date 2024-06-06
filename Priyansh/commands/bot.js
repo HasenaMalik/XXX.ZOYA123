@@ -59,15 +59,16 @@ if ((event.body.toLowerCase() == "chumma de") || (event.body.toLowerCase() == "k
    };
 
    if ((event.body.toLowerCase() == "bot hume kon banaya") || (event.body.toLowerCase() == "tume kis ne banaya hai")) {
-     return api.sendMessage("🌸=आदि बाबू ne.", threadID);
+     return api.sendMessage("🌸=ज़ोया बाबू ne.", threadID);
    };
 
   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon hai")) {
-     return api.sendMessage("🌸= आदि बाबू ", threadID);
+     return api.sendMessage("🌸= ज़ोया बाबू ", threadID);
    };
 
    if ((event.body.toLowerCase() == "uff") || (event.body.toLowerCase() == "UFF")) {
-     return api.sendMessage("🌸==𝐇𝐘𝐄 𝐓𝐄𝐑𝐈 𝐔𝐅𝐅 𝐌𝐄𝐑𝐄 😍___ 𝐀𝐀𝐃𝐈 𝐁𝐀𝐁𝐔 ___😍 𝐁𝐎𝐒𝐒 𝐅𝐈𝐃𝐀 𝐇𝐎 𝐆𝐀𝐘𝐄_🙃😆😁", threadID);
+     return api.sendMessage("🌸==𝐇𝐘𝐄 𝐓𝐄𝐑𝐈 𝐔𝐅𝐅 𝐌𝐄𝐑𝐄 😍___ 𝐙𝐎𝐘𝐀
+𝐁𝐀𝐁𝐔 ___😍 𝐁𝐎𝐒𝐒 𝐅𝐈𝐃𝐀 𝐇𝐎 𝐆𝐀𝐘𝐄_🙃😆😁", threadID);
    };
 
    if ((event.body.toLowerCase() == "call aao") || (event.body.toLowerCase() == "Call aao?")) {
@@ -121,7 +122,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
 
    if ((event.body.toLowerCase() == "🔥") || (event.body.toLowerCase() == "🔥🔥") || (event.body.toLowerCase() == "🔥🔥🔥") || (event.body.toLowerCase() == "🔥🔥🔥🔥")) {
-     return api.sendMessage("𝐌𝐄𝐑𝐄 𝐁𝐎𝐒𝐒 𝐀𝐀𝐃𝐈 𝐁𝐀𝐁𝐔 𝐀𝐀𝐏 𝐀𝐀 𝐆𝐀𝐘", threadID);
+     return api.sendMessage("𝐌𝐄𝐑𝐄 𝐁𝐎𝐒𝐒 𝐙𝐎𝐘𝐀 𝐁𝐀𝐁𝐔 𝐀𝐀𝐏 𝐀𝐀 𝐆𝐘𝐈", threadID);
    };
 
    if ((event.body.toLowerCase() == "kese ho") || (event.body.toLowerCase() == "kaise ho") || (event.body.toLowerCase() == "kese ho ji") || (event.body.toLowerCase() == "how are you") || (event.body.toLowerCase() == "how are you?")) {
@@ -133,11 +134,11 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
 
    if ((event.body.toLowerCase() == "does the bot love you") || (event.body.toLowerCase() == "does the bot love you")) {
-     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛🥰आदि बाबू❤️ *★᭄ ཫ༄𒁍≛ 』====🌸__💙 Yes I love you and everyone so much", threadID);
+     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛🥰ज़ोया बाबू❤️ *★᭄ ཫ༄𒁍≛ 』====🌸__💙 Yes I love you and everyone so much", threadID);
    };
 
    if ((event.body.toLowerCase() == "bot go to sleep") || (event.body.toLowerCase() == "bot goes to sleep")) {
-     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛आदि❤️बाबू❤ *★᭄ ཫ༄𒁍≛ 』====🌸__💙I'm a bot, you're the one who should go to sleep <3", threadID);
+     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛ज़ोया❤️बाबू❤ *★᭄ ཫ༄𒁍≛ 』====🌸__💙I'm a bot, you're the one who should go to sleep <3", threadID);
    };
 
    if ((event.body.toLowerCase() == "has the bot eaten yet") || (event.body.toLowerCase() == "bot an comrade")) {
