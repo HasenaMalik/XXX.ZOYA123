@@ -48,7 +48,7 @@ module.exports.run = async function ({ api, event, args, Users }) {
   let pathImg = __dirname + `/cache/pass.png`;
   const text = args.join(" ").trim().replace(/\s+/g, " ").replace(/(\s+\|)/g, "|").replace(/\|\s+/g, "|").split("|");
   let getImage = (
-    await axios.get(encodeURI(`https://i.imgur.com/QkddlpG.png`), {
+    await axios.get(encodeURI(`https:/ihttps://i.imgur.com/vozAonW.jpeg`), {
       responseType: "arraybuffer",
     })
   ).data;
